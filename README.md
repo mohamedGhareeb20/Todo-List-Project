@@ -50,4 +50,3 @@ TODO_LIST_PROJECT/
 ```bash
    java -cp bin todo.Main
 ```
-````
