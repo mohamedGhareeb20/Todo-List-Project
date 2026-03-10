@@ -7,6 +7,8 @@ This project is a task management desktop application that helps users stay orga
 
 The project follows the **MVC (Model-View-Controller)** design pattern, ensuring clean separation between the data, the business logic, and the user interface.
 
+![App Screenshot](screenshot.png)
+
 ## 🛠 Features
 * **Task Management:** Add, Edit, Delete, and mark tasks as "Done."
 * **Automated Reminders:** A background thread (Timer) runs every 60 seconds to monitor deadlines.
