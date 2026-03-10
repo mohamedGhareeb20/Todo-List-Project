@@ -31,15 +31,23 @@ TODO_LIST_PROJECT/
 │       ├── Task.java            # The Model (Data object)
 │       └── UpdateListener.java  # Interface for decoupled communication
 └── bin/                         # Compiled bytecode (auto-generated)
+` ` `
 
 ## 💻 How to Run
+
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/mohamedGhareeb20/Todo-List-Project.git]
+```bash
+   git clone https://github.com/mohamedGhareeb20/Todo-List-Project.git
+```
+
 2. **Compile the project:**
    Navigate to the project root folder in your terminal and run:
 ```bash
-javac -d bin src/todo/*.java
+   javac -d bin src/todo/*.java
+```
+
 3. **Launch the application:**
 ```bash
-java -cp bin todo.Main
+   java -cp bin todo.Main
+```
+````
