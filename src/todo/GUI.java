@@ -40,7 +40,8 @@ public class GUI extends Frame implements UpdateListener {
     }
 
     private void setupComponents() {
-        Label headerLabel = new Label(String.format(" %-22s | %-16s | %-10s | %s", "Title", "Due Date", "Priority", "Status"));
+        Label headerLabel = new Label(String.format(" %-30s | %-50s | %-16s | %-10s | %s", 
+                              "Title", "Description", "Due Date", "Priority", "Status"));
         headerLabel.setFont(new Font(Font.MONOSPACED, Font.BOLD, 14));
         headerLabel.setBackground(new Color(220, 220, 220));
         add(headerLabel, BorderLayout.NORTH);
@@ -117,12 +118,13 @@ public class GUI extends Frame implements UpdateListener {
             boolean isOverdue = "OVERDUE".equals(t.getStatus());
             String marker = isOverdue ? "  << !!! OVERDUE !!! >>" : "";
             
-            String row = String.format(" %-22s | %-16s | %-10s | %s%s",
-                    truncate(t.getTitle(), 20),
-                    t.getDueDate().format(dateFormatter),
-                    t.getPriority(),
-                    t.getStatus(),
-                    marker);
+            String row = String.format(" %-30s | %-50s | %-16s | %-10s | %s%s",
+            truncate(t.getTitle(), 28),         
+            truncate(t.getDescription(), 48),   
+            t.getDueDate().format(dateFormatter),
+            t.getPriority(),
+            t.getStatus(),
+            marker);
             taskListUI.add(row);
         }
         
